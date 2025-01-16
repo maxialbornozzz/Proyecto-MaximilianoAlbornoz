@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* fondo de pagina */
+.principal{
+    background-color: #212121;
+}
+.logo-oeste{
+    background-color:#fafafa;
+}
+.logo-principal{
+    display:flex;
+    justify-content: center;
+}
+
+/* Menu interactivo */
+
+.enlaces{
+    color: rgb(211, 211, 211);
+    background-color: #212121;
+    display: flex;
+    height: 45px;
+    width: 100%;
+    z-index: 100;
+    align-items: center;
+}
+.enlaces ul{
+    list-style-type: none;
+    padding: 0;
+}
+.enlaces li{
+    display: inline
+}
+.enlaces a{
+    text-decoration: none;
+    margin-right: 30px;
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+    color: white;
+    margin-left: 15px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+/* Titulo, parrafo*/
+.inicio{
+    background-color: #212121;
+    text-align: center;
+}
+.inicio h1{
+    font-size: 60px;
+    font-family: "Raleway", serif;
+    color: #fafafa;
+    font-weight: 700;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.inicio p{
+    font-size: 20px;
+    font-family: "Raleway", serif;
+    font-weight: 500;
+    color: #f7f7f7;
+    margin-bottom: 5px;
+}
+.imagenesglobal{
+    margin-top: 20px;
+}
+.imagenes{
+    background-color: #212121;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+/* Cronograma */
+.principal-crono{
+    background-color: #212121;
+}
+.cronograma-tittle{
+    text-align: center;
+    font-size: 60px;
+    font-family: "Raleway", serif;
+    background-color: #212121;
+    color: #fafafa;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.principal-crono {
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+.cronograma {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 50%;
+    color: white;
+}
+th, td {
+    border: 1px solid #444;
+    padding: 10px;
+    text-align: center;
+}
+th {
+    background-color: #5AA6D8;
+    color: white;
+    font-weight: bold;
+}
+td {
+    background-color: #1a1a1a;
+}
+
+
+/* Actividades */
+.principal-act{
+    background-color: #212121;
+}
+.actividades{
+    text-align: center;
+}
+    .actividades ul li{
+        font-size: 40px;
+        font-family: "Raleway", serif;
+        font-weight: 600;
+        color: #fafafa;
+}
+.actividades p{
+    font-size: 20px;
+        font-family: "Raleway", serif;
+        font-weight: 600;
+        color: #fafafa
+    }
+.footer-act{
+    color: #fafafa;
+}
+
+/* Precios */
+
+.principal-pre{
+    background-color: #212121;
+}
+.precios-center{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 20px;
+}
+.titulo-precios{
+    font-size: 60px;
+    font-family: "Raleway", serif;
+    color: #fafafa;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 15px;
+
+}
+.dias{
+    color: #fafafa;
+    font-size: 50px;
+    padding: 0;
+    margin: 0;
+    display: inline;
+    text-align: center;
+}
+.pagos{
+    background-color:#acacac;
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px;
+    width: 200px;
+    font-family: "Raleway", serif;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+.precio{
+    color: #fafafa;
+    font-size: 40px;
+    font-family: "Raleway", serif;
+    text-align: center;
+    list-style-type: none;
+}
+/* Localidad */
+.principal-local{
+    background-color: #212121;
+}
+.localidad{
+    text-align: center; 
+    font-size: 50px;
+    font-family: "Raleway", serif;
+    font-weight: 600;
+    color: #fafafa;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.direccion h2{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-family: "Raleway", serif;
+    font-weight: 200;
+    color:#fafafa
+}
+.direccion h3{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Raleway", serif;
+    font-weight: 200;
+    color: #fafafa;
+}
+
+footer{
+    margin-top: 20px;
+    text-align: center;
+    color: #fafafa;
+    background-color: #212121;
+}

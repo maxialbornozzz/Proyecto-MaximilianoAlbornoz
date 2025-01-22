@@ -1,6 +1,9 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    list-style: none;
 }
 /* fondo de pagina */
 .principal{
@@ -42,6 +45,9 @@
     font-size: 15px;
     font-weight: 500;
 }
+.enlaces a:hover{
+    color: #d7e9a5;
+}
 
 
 /* Titulo, parrafo*/
@@ -74,6 +80,13 @@
     gap: 5px;
     margin-bottom: 5px;
 }
+.imagenes-dos{
+    background-color: #212121;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 5px;
+}
 
 /* Cronograma */
 .principal-crono{
@@ -92,7 +105,6 @@
 .principal-crono {
     font-family: Arial, sans-serif;
     color: white;
-    text-align: center;
 }
 .cronograma {
     margin: 20px auto;
@@ -139,51 +151,22 @@ td {
 }
 
 /* Precios */
-
 .principal-pre{
     background-color: #212121;
 }
-.precios-center{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    text-align: center;
-    gap: 20px;
-}
-.titulo-precios{
-    font-size: 60px;
-    font-family: "Raleway", serif;
-    color: #fafafa;
-    font-weight: 700;
-    text-align: center;
-    margin-top: 15px;
-
-}
-.dias{
-    color: #fafafa;
-    font-size: 50px;
-    padding: 0;
-    margin: 0;
-    display: inline;
-    text-align: center;
-}
-.pagos{
-    background-color:#acacac;
-    border-radius: 20px;
-    text-align: center;
-    padding: 20px;
-    width: 200px;
-    font-family: "Raleway", serif;
-    margin-bottom: 20px;
-    margin-top: 50px;
-}
 .precio{
     color: #fafafa;
-    font-size: 40px;
+    margin-top: 30px;
+    font-size: 50px;
     font-family: "Raleway", serif;
+    font-weight: 600px;
     text-align: center;
-    list-style-type: none;
 }
+.custom-bg {
+    background-color: #212529;
+    color: white;
+}
+
 /* Localidad */
 .principal-local{
     background-color: #212121;
@@ -213,10 +196,131 @@ td {
     font-weight: 200;
     color: #fafafa;
 }
-
-footer{
-    margin-top: 20px;
+/* Footer */
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer{
+    padding: 100px 0 50px 0;
+    background: linear-gradient(#212121, #012f4e)
+}
+.footer-link{
+ display: flex;
+}
+.link{
+    width: 300px;
+}
+.link h3{
+    font-size: 18px;
+    color: whitesmoke;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif
+}
+.link a{
+    font-size: 17px;
+    color: whitesmoke;
+    display: block;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif
+}
+.link a:hover{
+    color: #5AA6D8
+}
+.socials{
+    display: flex;
+    margin-bottom: 15px;
+}
+.socials a{
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: #000000;
+    margin: 0 15px 10px 0;
     text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
     color: #fafafa;
-    background-color: #212121;
+    font-size: 20px;
+}
+.socials a:hover{
+    background-color: #fafafa;
+}
+hr{
+    border: 1px solid #6d6d6d;
+    margin: 35px 0;
+}
+.footer-text{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-text p{
+    font-size: 15px;
+    color: #fafafa;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* diseño para movil */
+@media screen and (max-width: 768px){
+/* home */
+.header{
+    text-align: center;
+}
+.inicio h1{
+    font-size: 55px;
+    width: 100%;
+    text-align: center;
+}
+.inicio p{
+    font-size: 17px;
+    width: 100%;
+    text-align: center;
+}
+.imagenes{
+    height: 75vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 25%);
+    row-gap: 1rem;
+    padding: 0;
+    margin: 0;
+    align-content: center;
+}
+.imagenes img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.imagenes-dos{
+    display: none;
+}
+
+/* cronograma */
+.cronograma-tittle{
+    font-size: 55px;
+    width: 100%;
+    text-align: center;
+}
+th, td {
+    font-size: 10px;
+    padding: 5px;
+}
+
+/* footer */
+.footer{
+    padding: 30px;
+}
+.footer-link{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.socials{
+    justify-content: center;
+}
+.footer-text{
+    text-align: center;
+}
+
 }

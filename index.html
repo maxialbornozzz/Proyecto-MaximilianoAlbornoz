@@ -4,59 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Oeste Fitness</title>
+    <link rel="stylesheet" href="css/main.css">
+    <title>Oeste Club</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="principal">
     <!-- enlaces entre paginas -->
     <header class="header">
       <div class="head">
-
-        <nav class="enlaces">
-          <ul>            
-           <li><a href="index.html">HOME</a></li>
-           <li><a href="gimnasio/cronograma.html">CRONOGRAMA</a></li>
-           <li><a href="gimnasio/actividades.html">ACTIVIDADES</a></li>
-           <li><a href="gimnasio/precios.html">PRECIOS</a></li>
-           <li><a href="gimnasio/localidad.html">LOCALIDAD</a></li>
-          </ul>
-        </nav>
-        
+          <nav class="enlaces" id="nav-menu">
+            
+              <!-- Lista de enlaces -->
+              <ul>
+                  <li><a href="index.html">HOME</a></li>
+                  <li><a href="gimnasio/cronograma.html">CRONOGRAMA</a></li>
+                  <div class="dropdown">
+                      <a>ACTIVIDADES</a>
+                      <div class="dropdown-content">
+                          <a href="gimnasio/menu/musculacion.html">Musculacion</a>
+                          <a href="gimnasio/menu/bodycombat.html">Body Combat</a>
+                          <a href="gimnasio/menu/bodypump.html">Body Pump</a>
+                          <a href="gimnasio/menu/ringside.html">Ring Side</a>
+                          <a href="gimnasio/menu/e-funcional.html">E. Funcional</a>
+                          <a href="gimnasio/menu/spinning.html">Spinning</a>
+                          <a href="gimnasio/menu/localizada.html">Localizada</a>
+                      </div>
+                  </div>
+                  <li><a href="gimnasio/precios.html">PRECIOS</a></li>
+                  <li><a href="gimnasio/localidad.html">LOCALIDAD</a></li>
+              </ul>
+          </nav> 
       </div>
   </header>
+  
   <div class="logo-oeste">
-    <a href="index.html" class="logo-principal"><img src="./img/image.png" alt="Logo de Fitness Club"></a>
+    <a href="index.html" class="logo-principal"><img class="logo" src="./img/image.png" alt="Logo de Fitness Club"></a>
   </div>
     <!-- logo principal e inicio de la pagina -->
      
 <main>
     <div class="inicio">
-        <h1>Oeste Club</h1>
-          <p>En <b>Oeste Club</b> entendemos que entrenar es mucho más que mejorar físicamente</p>
-          <p>es <b>crear vínculos y disfrutar del camino.</b></p>
-          <p>Nos esforzamos para que cada socio se sienta parte de un ambiente acogedor</p>
-          <p>donde el ejercicio se convierte en una experiencia divertida y motivadora.</p>
-          <p>Porque alcanzar tus metas es más fácil cuando tienes el respaldo de una comunidad</p>
-          <p>cada clase y cada entrenador son una oportunidad para crecer juntos.</p>
-          <p>OESTE CLUB NO ES SOLO UN GIMNASIO</p>
-          <p>ES TU SEGUNDA CASA</b></p>
-    </div>
+            <h1>Oeste Club</h1>
+              <p>En <b>Oeste Club</b> entendemos que entrenar es mucho más que mejorar físicamente</p>
+              <p>es <b>crear vínculos y disfrutar del camino.</b></p>
+              <p>Nos esforzamos para que cada socio se sienta parte de un ambiente acogedor</p>
+              <p>donde el ejercicio se convierte en una experiencia divertida y motivadora.</p>
+              <p>Porque alcanzar tus metas es más fácil cuando tienes el respaldo de una comunidad</p>
+              <p>cada clase y cada entrenador son una oportunidad para crecer juntos.</p>
+              <p>OESTE CLUB NO ES SOLO UN GIMNASIO</p>
+              <p>ES TU SEGUNDA CASA</b></p>
+      </div>
+      <nav>
 
-    <!-- cuatro imagenes principales -->
-    <div class="imagenesglobal">
-      <section class="imagenes">
-          <img src="./img/gimnasio.jpg" alt="Personas entrenando" width="400px">
-          <img src="./img/gimnasio-dos.jpg" alt="Personas entrenando" width="400px">
-      </section>
 
-      <section class="imagenes-dos">
-        <img src="./img/gimnasio-tres.jpg" alt="Personas entrenando" width="400px">
-        <img src="./img/gimnasio-cuatro.jpg" alt="Personas entrenando" width="400px">
-      </section>
-    </div>
+        <nav class="container-ins">
+          <div class="inscribirse">
+          <img src="./img/musculacion.jpg" alt="Gimnasio">
+          <div class="ins-content">
+              <h2>Oeste Fitness</h2>
+              <p>Buenos Aires - San Justo - Almafuerte 3460</p>
+              <a href="gimnasio/localidad.html" class="local">Ver en Google Maps</a>
+              <div class="precios-index">
+                  <div>
+                      <strong>3 DIAS</strong><br>
+                      <p>$20.000</p>
+                  </div>
+                  <div>
+                      <strong>PASE LIBRE</strong><br>
+                      <p>$23.500</p>
+                  </div>
+              </div>
+              <a href="gimnasio/precios.html" class="btn-precios">¡Inscribite ya!</a>
+              </div>
+        <nav>
 </main>
 
 <footer class="footer">
@@ -64,56 +87,43 @@
 
     <div class="footer-link">
 
-      <div class="link">
-        <h3>Lorem</h3>
+        <div class="link">
+          <h3>Clases</h3>
           <ul>
-              <li><a href="#">Lorem</a></li>
-              <li><a href="#">Lorem</a></li>
-              <li><a href="#">Lorem</a></li>
-              <li><a href="#">Lorem</a></li>
-              <li><a href="#">Lorem</a></li>
+              <li><a href="gimnasio/menu/musculacion.html">Musculacion</a></li>
+              <li><a href="gimnasio/menu/bodycombat.html">Body Combat</a></li>
+              <li><a href="gimnasio/menu/bodypump.html">Body Pump</a></li>
+              <li><a href="gimnasio/menu/ringside.html">Ring Side</a></li>
+              <li><a href="gimnasio/menu/e-funcional.html">E. Funcional</a></li>
+              <li><a href="gimnasio/menu/spinning.html">Spinning</a></li>
+              <li><a href="gimnasio/menu/localizada.html">Localizada</a></li>
           </ul>
-      </div>
-
-      <div class="link">
-        <h3>Clases</h3>
-        <ul>
-            <li><a href="#">Spinning</a></li>
-            <li><a href="#">Musculacion</a></li>
-            <li><a href="#">E. Funcional</a></li>
-            <li><a href="#">B. Combat</a></li>
-            <li><a href="#">B. Pump</a></li>
-            <li><a href="#">Localizada</a></li>
-            <li><a href="#">Zumba</a></li>
-            <li><a href="#">Yoga</a></li>
-            <li><a href="#">Latin Style</a></li>
-            <li><a href="#">Ringside</a></li>
-        </ul>
-      </div>
-
-      <div class="link">
-        <h3>Menu</h3>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="gimnasio/cronograma.html">Cronograma</a></li>
-          <li><a href="gimnasio/actividades.html">Actividades</a></li>
-          <li><a href="gimnasio/precios.html">Precios</a></li>
-          <li><a href="gimnasio/localidad.html">Localidad</a></li>
-        </ul>
-      </div>
-
-      <div class="link">
-        <h3>Siguenos</h3>
-            <div class="socials">
-                  <a href="https://www.instagram.com/oestefitnessclub/"><i class="bi bi-instagram"></i></a>
-            </div>
-      </div>
-    </div>
-
+        </div>
+  
+        <div class="link">
+          <h3>Menu</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gimnasio/cronograma.html">Cronograma</a></li>
+            <li><a href="gimnasio/precios.html">Precios</a></li>
+            <li><a href="gimnasio/localidad.html">Localidad</a></li>
+          </ul>
+        </div>
+  
+        <div class="link">
+          <h3>Siguenos</h3>
+              <div class="socials">
+                    <a href="https://www.instagram.com/oestefitnessclub/"><i class="bi bi-instagram"></i></a>
+              </div>
+        </div>
+  </div>
+    
     <hr>
     <div class="footer-text">
         <p>Politica de privacidad</p>
         <p>Todos los derechos reservados</p>
     </div>
+</footer>
+
 </body>
 </html>

@@ -1,0 +1,591 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none !important;
+  list-style: none;
+}
+
+body {
+  background-color: #212121;
+}
+
+/* estilos de tablet */
+.principal {
+  background-color: #212121;
+}
+
+.logo-oeste {
+  background-image: url("../img/paralogo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+}
+
+.logo-principal {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  margin-top: 50px;
+}
+
+.enlaces {
+  color: rgb(211, 211, 211);
+  background-color: #212121;
+  display: flex;
+  height: 45px;
+  width: 100%;
+  z-index: 100;
+  align-items: center;
+}
+.enlaces ul {
+  list-style: none;
+  margin: 0;
+}
+.enlaces li {
+  display: inline;
+}
+.enlaces a {
+  text-decoration: none;
+  margin-right: 30px;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  color: white;
+  margin-left: 15px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.enlaces ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.enlaces ul li {
+  position: relative;
+}
+.enlaces a {
+  display: block;
+  padding: 14px 20px;
+  color: white;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+.enlaces a:hover {
+  color: #A4C840;
+}
+
+.inicio {
+  background-color: #212121;
+  text-align: center;
+}
+.inicio h1 {
+  font-size: 60px;
+  font-family: "Raleway", serif;
+  color: #fafafa;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+.inicio p {
+  font-size: 20px;
+  font-family: "Raleway", serif;
+  font-weight: 500;
+  color: #fafafa;
+  margin-bottom: 5px;
+}
+
+.inscribirse {
+  display: flex;
+  width: 800px;
+  height: 400px;
+  background: rgb(0, 0, 0);
+  border-radius: 10px;
+  box-shadow: 0 4px 60px rgba(149, 223, 241, 0.322);
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.inscribirse img {
+  width: 40%;
+  height: 100%;
+  object-fit: cover;
+  padding: 20px;
+}
+.inscribirse h2 {
+  color: #fafafa;
+}
+.inscribirse strong {
+  color: #fafafa;
+}
+.inscribirse div strong {
+  color: #fafafa;
+}
+
+.ins-content {
+  padding: 30px;
+  width: 60%;
+}
+.ins-content h2 {
+  margin: 0;
+  font-size: 28px;
+}
+.ins-content p {
+  color: #ADADAD;
+  font-size: 18px;
+}
+.ins-content .precios-index {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.ins-content .precios-index div {
+  text-align: center;
+}
+.ins-content .btn-precios {
+  display: block;
+  background: #212121;
+  color: #fafafa;
+  text-align: center;
+  padding: 14px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.container-ins {
+  margin-left: 50px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.local {
+  color: #fafafa;
+}
+
+.local:hover {
+  color: #1FABDC;
+}
+
+.btn-precios:hover {
+  background-color: #1FABDC;
+  color: #fafafa;
+}
+
+.principal-crono {
+  background-color: #212121;
+}
+
+.cronograma-tittle {
+  font-size: 60px;
+  font-family: "Raleway", serif;
+  color: #fafafa;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.principal-crono {
+  font-family: Arial, sans-serif;
+  color: #fafafa;
+}
+
+.cronograma {
+  margin: 20px auto;
+  border-collapse: collapse;
+  width: 50%;
+  color: #fafafa;
+}
+
+th, td {
+  border: 1px solid #444;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #1FABDC;
+  color: #fafafa;
+  font-weight: bold;
+}
+
+td {
+  background-color: #1a1a1a;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #212121;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+.dropdown-content li a {
+  padding: 12px 16px;
+  white-space: nowrap;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ADADAD;
+  color: #fafafa;
+}
+
+.body-menu {
+  background-color: #212121;
+}
+
+.tittle-menu {
+  font-size: 50px;
+  font-family: "Raleway", serif;
+  font-weight: 600;
+  color: #fafafa;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.subtittle-menu {
+  font-size: 30px;
+  font-family: "Raleway", serif;
+  font-weight: 600;
+  color: #fafafa;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.p-menu {
+  font-size: 20px;
+  font-family: "Raleway", serif;
+  font-weight: 600;
+  color: #fafafa;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.img-menu {
+  display: block;
+  margin: 0 auto;
+  width: 500px;
+  margin-top: 50px;
+}
+
+.principal-pre {
+  background-color: #212121;
+}
+
+.precio {
+  font-size: 60px;
+  font-family: "Raleway", serif;
+  color: #fafafa;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.custom-bg {
+  background-color: #212121;
+  color: #fafafa;
+}
+
+.principal-local {
+  background-color: #212121;
+}
+
+.localidad {
+  font-size: 60px;
+  font-family: "Raleway", serif;
+  color: #fafafa;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.direccion h2 {
+  color: #fafafa;
+  text-align: center;
+  font-size: 40px;
+  font-family: "Raleway", serif;
+  font-weight: 200;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.direccion h3 {
+  color: #fafafa;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Raleway", serif;
+  font-weight: 200;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer {
+  padding: 100px 0 50px 0;
+  background: linear-gradient(#212121, #5e6163);
+}
+
+.footer-link {
+  display: flex;
+}
+
+.link {
+  width: 300px;
+}
+.link h3 {
+  font-size: 18px;
+  color: whitesmoke;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.link a {
+  font-size: 17px;
+  color: whitesmoke;
+  display: block;
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.link a:hover {
+  color: #5AA6D8;
+}
+
+.socials {
+  display: flex;
+  margin-bottom: 15px;
+}
+.socials a {
+  display: inline-block;
+  min-height: 40px;
+  width: 40px;
+  background-color: #000000;
+  margin: 0 15px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #fafafa;
+  font-size: 20px;
+}
+.socials a:hover {
+  background-color: #fafafa;
+}
+
+hr {
+  border: 1px solid #6d6d6d;
+  margin: 35px 0;
+}
+
+.footer-text {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-text p {
+  font-size: 15px;
+  color: #fafafa;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#app h1 {
+  color: #fafafa;
+  text-align: center;
+  margin-top: 60px;
+  font-family: "Raleway";
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+#app .tittle-clases {
+  color: #1FABDC;
+  text-align: center;
+}
+#app h2 {
+  color: #fafafa;
+}
+
+.contenido-musc {
+  display: flex;
+  align-items: center;
+  margin-left: 100px;
+}
+.contenido-musc .clases-musc {
+  flex: 1;
+}
+.contenido-musc .clases-musc h2 {
+  background: linear-gradient(#ADADAD, #1FABDC);
+  color: white;
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  margin-bottom: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.contenido-musc .clases-musc p {
+  color: #fafafa;
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn-musc {
+  background: linear-gradient(#1FABDC, #ADADAD);
+  border: none;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.btn-musc a {
+  color: #fafafa;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.image-musc {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.image-musc img {
+  margin-left: 100px;
+  margin-top: 40px;
+  width: 50%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  z-index: 1;
+}
+
+.overlay-text {
+  color: #fafafa;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.5rem;
+  text-transform: lowercase;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-left: 90px;
+  margin-top: 1000px;
+}
+
+/* extras */
+ul {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 991px) {
+  .header {
+    text-align: center;
+  }
+  .inicio h1 {
+    font-size: 55px;
+    width: 100%;
+    text-align: center;
+  }
+  .inicio p {
+    font-size: 17px;
+    width: 100%;
+    text-align: center;
+  }
+  .inscribirse {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    width: 400px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-ins {
+    margin: 0 auto;
+  }
+  .enlaces ul {
+    display: none;
+  }
+  .cronograma-tittle {
+    font-size: 55px;
+    width: 100%;
+    text-align: center;
+  }
+  th, td {
+    font-size: 10px;
+    padding: 5px;
+  }
+  .footer {
+    padding: 30px;
+  }
+  .footer-link {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .socials {
+    justify-content: center;
+  }
+  .footer-text {
+    text-align: center;
+  }
+  #app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  #app span {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  .contenido-musc {
+    flex-direction: column;
+    margin-left: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .contenido-musc .clases-musc {
+    width: 90%;
+  }
+  .contenido-musc .clases-musc h2, .contenido-musc .clases-musc p {
+    text-align: center;
+  }
+  .contenido-musc .image-musc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+  }
+  .contenido-musc .image-musc img {
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    margin: 0 auto;
+  }
+  .contenido-musc .image-musc .overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .contenido-musc .image-musc .overlay .overlay-text {
+    font-size: 2rem;
+    margin-left: 0;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

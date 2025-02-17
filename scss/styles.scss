@@ -1,0 +1,579 @@
+// import de reset
+@import "general/reset";
+
+// import de variables
+@import "utilidades/variables";
+
+// import de listas
+@import "utilidades/listas";
+
+// import de home
+@import "general/home";
+
+// import mq de tablet
+@import "general/mq-tablet";
+
+// fondo de pagina
+.principal{
+    background-color: $color-fondo
+}
+.logo-oeste{
+    background-image: url("../img/paralogo.png");
+    background-size: cover;                
+    background-position: center;           
+    background-repeat: no-repeat;          
+    height: 300px;
+}
+.logo-principal{
+    display:flex;
+    justify-content: center;
+}
+.logo{
+    margin-top: 50px;
+}
+
+// menu interactivo
+.enlaces{
+    color: rgb(211, 211, 211);
+    background-color: $color-fondo;
+    display: flex;
+    height: 45px;
+    width: 100%;
+    z-index: 100;
+    align-items: center;
+    ul{
+        list-style: none;
+        margin: 0;
+    }
+    li{
+        display: inline;
+    }
+    a{
+        text-decoration: none;
+        margin-right: 30px;
+        font-size: 20px;
+        font-family: "Raleway", sans-serif;
+        color: white;
+        margin-left: 15px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+}
+    ul li{
+        position: relative;
+    }
+    a{
+        display: block;
+        padding: 14px 20px;
+        color: white;
+        text-decoration: none;
+        transition: background 0.3s;
+    }
+    a:hover{
+        color: $color-verde
+    }
+    
+    }
+
+
+// titulo y parrafo
+.inicio{
+    background-color: $color-fondo;
+    text-align: center;
+    h1{
+        @include tittle;
+    }
+    p{
+    font-size: 20px;
+    font-family: "Raleway", serif;
+    font-weight: 500;
+    color: $color-blanco;
+    margin-bottom: 5px;
+}
+}
+
+// menu de pago en pagina principal
+.inscribirse {
+    display: flex;
+    width: 800px;
+    height: 400px;
+    background: rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0 4px 60px rgba(149, 223, 241, 0.322);
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+        img{
+            width: 40%;
+            height: 100%;
+            object-fit: cover;
+            padding: 20px;
+    }
+        h2{
+            color: $color-blanco;
+        }
+        strong{
+            color: $color-blanco;
+        }
+        div strong{
+            color: $color-blanco;
+        }
+}
+.ins-content{
+    padding: 30px;
+    width: 60%;
+        h2{
+            margin: 0;
+            font-size: 28px;
+        }
+        p{
+            color: $color-gris;
+            font-size: 18px;
+        }
+        .precios-index {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+        .precios-index div {
+                text-align: center;
+        }
+        .btn-precios {
+                display: block;
+                background: $color-fondo;
+                color: $color-blanco;
+                text-align: center;
+                padding: 14px;
+                border-radius: 5px;
+                text-decoration: none;
+                font-weight: bold;
+        }
+
+}
+.container-ins{
+    margin-left: 50px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.local{
+    color: $color-blanco
+}
+.local:hover{
+    color: $color-celeste
+}
+.btn-precios:hover{
+    background-color:$color-celeste;
+    color: $color-blanco
+}
+
+// cronograma
+.principal-crono{
+    background-color: $color-fondo;
+}
+.cronograma-tittle{
+    @include tittle;
+}
+.principal-crono {
+    font-family: Arial, sans-serif;
+    color: $color-blanco;
+}
+.cronograma {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 50%;
+    color: $color-blanco;
+}
+th, td {
+    border: 1px solid #444;
+    padding: 10px;
+    text-align: center;
+}
+th {
+    background-color: $color-celeste;
+    color: $color-blanco;
+    font-weight: bold;
+}
+td {
+    background-color: #1a1a1a;
+}
+
+// actividades
+.dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: $color-fondo;
+        min-width: 160px;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+        z-index: 1000;
+    li a {
+        padding: 12px 16px;
+        white-space: nowrap;
+    }
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: $color-gris;
+    color: $color-blanco;
+}
+
+// menu de actividades
+.body-menu{
+    background-color: $color-fondo;
+    }
+    .tittle-menu{
+        font-size: 50px;
+        font-family: "Raleway", serif;
+        font-weight: 600;
+        color: $color-blanco;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .subtittle-menu{
+        font-size: 30px;
+        font-family: "Raleway", serif;
+        font-weight: 600;
+        color: $color-blanco;
+        text-align: center;
+        margin-top: 5px;
+    }
+    .p-menu{
+        font-size: 20px;
+        font-family: "Raleway", serif;
+        font-weight: 600;
+        color: $color-blanco;
+        text-align: center;
+        margin-top: 5px;
+    }
+    .img-menu{
+        display: block; 
+        margin: 0 auto; 
+        width: 500px;
+        margin-top: 50px;
+    }
+
+// precios
+.principal-pre{
+    background-color: $color-fondo;
+}
+.precio{
+    @include tittle;
+}
+.custom-bg {
+    background-color: $color-fondo;
+    color: $color-blanco;
+}
+
+// localidad
+.principal-local{
+    background-color: $color-fondo;
+}
+.localidad{
+    @include tittle
+}
+.direccion {
+h2{
+    color: $color-blanco;
+    text-align: center;
+    font-size: 40px;
+    font-family: "Raleway", serif;
+    font-weight: 200;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+h3{
+    color: $color-blanco;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Raleway", serif;
+    font-weight: 200;
+}
+}
+
+// footer
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer{
+    padding: 100px 0 50px 0;
+    background: linear-gradient($color-fondo, #5e6163)
+}
+.footer-link{
+ display: flex;
+}
+.link{
+    width: 300px;
+    h3{
+        font-size: 18px;
+        color: whitesmoke;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        font-family: Arial, Helvetica, sans-serif
+    }
+    a{
+        font-size: 17px;
+        color: whitesmoke;
+        display: block;
+        margin-bottom: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+}
+    a:hover{
+    color: #5AA6D8
+}
+}
+.socials{
+    display: flex;
+    margin-bottom: 15px;
+a{
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: #000000;
+    margin: 0 15px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fafafa;
+    font-size: 20px;
+}
+a:hover{
+    background-color: $color-blanco;
+}
+}
+hr{
+    border: 1px solid #6d6d6d;
+    margin: 35px 0;
+}
+.footer-text{
+    display: flex;
+    justify-content: space-between;
+p {
+    font-size: 15px;
+    color: $color-blanco;
+    font-family: Arial, Helvetica, sans-serif;
+}
+}
+
+// Clases
+#app {
+    h1{
+        color: $color-blanco;
+        text-align: center;
+        margin-top: 60px;
+        font-family: "Raleway";
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+    .tittle-clases{
+        color: $color-celeste;
+        text-align: center;
+    }
+    h2{
+        color: $color-blanco;
+    }
+
+}
+
+.contenido-musc {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+.clases-musc {
+    flex: 1;
+        h2{
+            background: linear-gradient($color-gris, $color-celeste);
+            color: white;
+            display: inline-block;
+            padding: 0.5rem 2rem;
+            margin-bottom: 2rem;
+            font-family: Arial, Helvetica, sans-serif;
+            }
+        p{
+            color: $color-blanco;
+            margin-bottom: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        }
+    }
+
+.btn-musc{
+    background: linear-gradient($color-celeste, $color-gris);
+    border: none;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    a{
+        color: $color-blanco;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+.image-musc {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-musc img {
+    margin-left: 100px;
+    margin-top: 40px;
+    width: 50%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    z-index: 1;
+}
+
+.overlay-text {
+    color: $color-blanco;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    text-transform: lowercase;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    margin-left: 90px;
+    margin-top: 1000px;
+}
+
+
+/* extras */
+ul{
+    margin-bottom: 0;
+}
+
+
+
+
+
+// diseño para movil
+
+@media screen and (max-width: 991px){
+// inicio
+    .header{
+        text-align: center;
+    }
+    .inicio h1{
+        font-size: 55px;
+        width: 100%;
+        text-align: center;
+    }
+    .inicio p{
+        font-size: 17px;
+        width: 100%;
+        text-align: center;
+    }
+    .inscribirse{
+        margin-top: 40px;
+        margin-bottom: 40px;
+        display: flex;
+        width: 400px;
+        height: 400px;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-ins{
+        margin: 0 auto;
+    }
+    .enlaces ul{
+        display: none;
+    }
+    
+    // cronograma
+    .cronograma-tittle{
+        font-size: 55px;
+        width: 100%;
+        text-align: center;
+    }
+    th, td {
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    
+    // footer
+    .footer{
+        padding: 30px;
+    }
+    .footer-link{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .socials{
+        justify-content: center;
+    }
+    .footer-text{
+        text-align: center;
+    }
+
+    // clases
+        #app {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            span{
+                display: flex;
+                text-align: center;
+                justify-content: center;
+            }
+        }
+    
+        .contenido-musc {
+            flex-direction: column;
+            margin-left: 0;
+            align-items: center;
+            justify-content: center;
+    
+            .clases-musc {
+                width: 90%;
+    
+                h2, p {
+                    text-align: center;
+                }
+            }
+    
+            .image-musc {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                margin: 20px 0;
+    
+                img {
+                    width: 80%;
+                    max-width: 400px;
+                    height: auto;
+                    border-radius: 8px;
+                    margin: 0 auto;
+                }
+    
+    
+                .overlay {
+                    position: absolute;
+                    bottom: 10px;
+                    left: 50%;
+                    transform: translateX(-50%);
+    
+                    .overlay-text {
+                        font-size: 2rem;
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }

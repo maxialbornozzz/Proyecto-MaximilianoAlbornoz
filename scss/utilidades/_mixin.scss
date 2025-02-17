@@ -1,0 +1,10 @@
+// mixin sin parametros
+@mixin tittle{
+    font-size: 60px;
+    font-family: "Raleway", serif;
+    color: $color-blanco;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+}

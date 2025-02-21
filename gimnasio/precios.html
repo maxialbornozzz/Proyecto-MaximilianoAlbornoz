@@ -12,64 +12,87 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&family=Raleway:wght@100&display=swap" rel="stylesheet">
 </head>
 <body class="principal-pre">
-  <header class="header">
-      <div class="head">
-        <nav class="enlaces">
-          <ul>            
-           <li><a href="../index.html">HOME</a></li>
-           <li><a href="cronograma.html">CRONOGRAMA</a></li>
-              <div class="dropdown">
-                <a>ACTIVIDADES</a>
-                <div class="dropdown-content">
-                    <a href="menu/musculacion.html">Musculacion</a>
-                    <a href="menu/bodycombat.html">Body Combat</a>
-                    <a href="menu/bodypump.html">Body Pump</a>
-                    <a href="menu/ringside.html">Ring Side</a>
-                    <a href="menu/e-funcional.html">E. Funcional</a>
-                    <a href="menu/spinning.html">Spinning</a>
-                    <a href="menu/localizada.html">Localizada</a>
+    <header class="header">
+        <div class="head">
+          <nav class="enlaces">
+            <ul>            
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="cronograma.html">CRONOGRAMA</a></li>
+                <div class="dropdown">
+                  <a>ACTIVIDADES</a>
+                  <div class="dropdown-content">
+                      <a href="menu/musculacion.html">Musculacion</a>
+                      <a href="menu/bodycombat.html">Body Combat</a>
+                      <a href="menu/bodypump.html">Body Pump</a>
+                      <a href="menu/ringside.html">Ring Side</a>
+                      <a href="menu/e-funcional.html">E. Funcional</a>
+                      <a href="menu/spinning.html">Spinning</a>
+                      <a href="menu/localizada.html">Localizada</a>
+                  </div>
                 </div>
-              </div>
-           <li><a href="precios.html">PRECIOS</a></li>
-           <li><a href="localidad.html">LOCALIDAD</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="logo-oeste">
-        <a href="../index.html" class="logo-principal"><img class="logo" src="../img/image.png" alt="Logo de Fitness Club"></a>
-      </div>
-</header>
-<main>
-<!--Precios -->
-<h1 class="precio">Precios</h1>
-      <section class="py-5">
-        <div class="container text-center">
-          <div class="row g-4">
-            <div class="col-md-6">
-              <div class="card shadow">
-                <div class="card-body">
-                  <h5 class="card-title">Pase Libre</h5>
-                  <p class="card-text fs-4">$18.000</p>
-                  <button class="btn btn-primary">Comprar</button>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="card shadow">
-                <div class="card-body">
-                  <h5 class="card-title">3 Días x Semana</h5>
-                  <p class="card-text fs-4">$16.000</p>
-                  <button class="btn btn-primary">Comprar</button>
-                </div>
-              </div>
-            </div>
-          </div>
+            <li><a href="precios.html">PRECIOS</a></li>
+            <li><a href="localidad.html">LOCALIDAD</a></li>
+            </ul>
+          </nav>
         </div>
-      </section>
 
+    <!-- menu hamburguesa -->
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburguesa" onclick="document.getElementById('menu').classList.toggle('mostrar')">
+              <div></div>
+              <div></div>
+              <div></div>
+            </label>
+    <nav class="menu" id="menu">
+        <a href="../index.html">HOME</a>
+        <a href="cronograma.html">CRONOGRAMA</a>
+        <div class="submenu-container">
+          <a>ACTIVIDADES ▼</a>
+          <div class="submenu">
+            <a href="menu/musculacion.html">Musculacion</a>
+            <a href="menu/bodycombat.html">Body Combat</a>
+            <a href="menu/bodypump.html">Body Pump</a>
+            <a href="menu/ringside.html">Ring Side</a>
+            <a href="menu/e-funcional.html">E. Funcional</a>
+            <a href="menu/spinning.html">Spinning</a>
+            <a href="menu/localizada.html">Localizada</a>
+           </div>
+      </div>
+          </div>
+          <li><a href="precios.html">PRECIOS</a></li>
+          <li><a href="localidad.html">LOCALIDAD</a></li>
+    </nav>
+    <div class="logo-oeste">
+      <a href="../index.html" class="logo-principal"><img class="logo" src="../img/image.png" alt="Logo de Fitness Club"></a>
+    </div>
+    </header>
+  <main>
+    <!--Precios -->
+          <h1 class="precio">Precios</h1>
+          <section class="py-5">
+              <div class="container text-center">
+                <div class="row g-4">
+                  <div class="col-md-6">
+                    <div class="card shadow">
+                      <div class="card-body">
+                        <h5 class="card-title">Pase Libre</h5>
+                          <p class="card-text fs-4">$23.500</p>
+                        <button class="btn btn-primary">Comprar</button>
+                    </div>
+                </div>
+              </div>
 
-</main>
+                <div class="col-md-6">
+                  <div class="card shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">3 Días x Semana</h5>
+                        <p class="card-text fs-4">$20.000</p>
+                        <button class="btn btn-primary">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+          </section>
+  </main>
 
 <footer class="footer">
   <div class="container">
@@ -77,7 +100,7 @@
     <div class="footer-link">
 
         <div class="link">
-          <h3>Clases</h3>
+            <h3>Clases</h3>
           <ul>
               <li><a href="menu/musculacion.html">Musculacion</a></li>
               <li><a href="menu/bodycombat.html">Body Combat</a></li>

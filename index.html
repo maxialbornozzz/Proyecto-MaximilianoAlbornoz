@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gimnasio Oeste Club">
+    <meta name="keywords" content="Oeste Club, Oeste Fitness, Gimnasio, Gimnasio en Argentina, Gimnasio en San Justo">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <title>Oeste Club</title>
@@ -13,6 +15,7 @@
 </head>
 <body class="principal">
     <!-- enlaces entre paginas -->
+
     <header class="header">
       <div class="head">
           <nav class="enlaces" id="nav-menu">
@@ -38,11 +41,39 @@
               </ul>
           </nav> 
       </div>
+    
+    <!-- menu hamburguesa -->
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburguesa" onclick="document.getElementById('menu').classList.toggle('mostrar')">
+              <div></div>
+              <div></div>
+              <div></div>
+            </label>
+            <nav class="menu" id="menu">
+                <a href="index.html">HOME</a>
+                <a href="gimnasio/cronograma.html">CRONOGRAMA</a>
+                <div class="submenu-container">
+                  <a href="#">ACTIVIDADES ▼</a>
+                  <div class="submenu">
+                    <a href="gimnasio/menu/musculacion.html">Musculacion</a>
+                    <a href="gimnasio/menu/bodycombat.html">Body Combat</a>
+                    <a href="gimnasio/menu/bodypump.html">Body Pump</a>
+                    <a href="gimnasio/menu/ringside.html">Ring Side</a>
+                    <a href="gimnasio/menu/e-funcional.html">E. Funcional</a>
+                    <a href="gimnasio/menu/spinning.html">Spinning</a>
+                    <a href="gimnasio/menu/localizada.html">Localizada</a>
+                  </div>
+              </div>
+                  </div>
+                  <li><a href="gimnasio/precios.html">PRECIOS</a></li>
+                  <li><a href="gimnasio/localidad.html">LOCALIDAD</a></li>
+            </nav>
+
+    <div class="logo-oeste">
+      <a href="index.html" class="logo-principal"><img class="logo" src="./img/image.png" alt="Logo de Fitness Club"></a>
+    </div>
   </header>
   
-  <div class="logo-oeste">
-    <a href="index.html" class="logo-principal"><img class="logo" src="./img/image.png" alt="Logo de Fitness Club"></a>
-  </div>
     <!-- logo principal e inicio de la pagina -->
      
 <main>
@@ -58,20 +89,18 @@
               <p>ES TU SEGUNDA CASA</b></p>
       </div>
       <nav>
-
-
         <nav class="container-ins">
-          <div class="inscribirse">
-          <img src="./img/musculacion.jpg" alt="Gimnasio">
-          <div class="ins-content">
-              <h2>Oeste Fitness</h2>
-              <p>Buenos Aires - San Justo - Almafuerte 3460</p>
+            <div class="inscribirse">
+            <img src="./img/musculacion.jpg" alt="Gimnasio">
+            <div class="ins-content">
+                <h2>Oeste Fitness</h2>
+                <p>Buenos Aires - San Justo - Almafuerte 3460</p>
               <a href="gimnasio/localidad.html" class="local">Ver en Google Maps</a>
               <div class="precios-index">
-                  <div>
-                      <strong>3 DIAS</strong><br>
-                      <p>$20.000</p>
-                  </div>
+                    <div>
+                        <strong>3 DIAS</strong><br>
+                        <p>$20.000</p>
+                    </div>
                   <div>
                       <strong>PASE LIBRE</strong><br>
                       <p>$23.500</p>
@@ -80,7 +109,8 @@
               <a href="gimnasio/precios.html" class="btn-precios">¡Inscribite ya!</a>
               </div>
         <nav>
-</main>
+
+  </main>
 
 <footer class="footer">
   <div class="container">
@@ -124,6 +154,6 @@
         <p>Todos los derechos reservados</p>
     </div>
 </footer>
-
+               
 </body>
 </html>

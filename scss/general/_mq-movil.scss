@@ -1,0 +1,125 @@
+// diseño para movil
+@media screen and (max-width: 700px){
+    // inicio
+        .header{
+            text-align: center;
+        }
+        .inicio h1{
+            font-size: 55px;
+            width: 100%;
+            text-align: center;
+        }
+        .inicio p{
+            font-size: 17px;
+            width: 100%;
+            text-align: center;
+        }
+        .inscribirse{
+            margin-top: 40px;
+            margin-bottom: 40px;
+            display: flex;
+            width: 400px;
+            height: 400px;
+            justify-content: center;
+            align-items: center;
+        }
+        .container-ins{
+            margin: 0 auto;
+        }
+        .enlaces ul{
+            display: none;
+        }
+        
+        // cronograma
+        .cronograma-tittle{
+            font-size: 55px;
+            width: 100%;
+            text-align: center;
+        }
+        th, td {
+            font-size: 10px;
+            padding: 5px;
+        }
+    
+        
+        // footer
+        .footer{
+            padding: 30px;
+        }
+        .footer-link{
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .socials{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+    
+        .footer-text{
+            text-align: center;
+        }
+    
+        // clases
+            #app {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                span{
+                    display: flex;
+                    text-align: center;
+                    justify-content: center;
+                }
+            }
+        
+            .contenido-musc {
+                flex-direction: column;
+                margin-left: 0;
+                align-items: center;
+                justify-content: center;
+        
+                .clases-musc {
+                    width: 90%;
+        
+                    h2, p {
+                        text-align: center;
+                    }
+                }
+        
+                .image-musc {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    margin: 20px 0;
+        
+                    img {
+                        width: 80%;
+                        max-width: 400px;
+                        height: auto;
+                        border-radius: 8px;
+                        margin: 0 auto;
+                    }
+        
+        
+                    .overlay {
+                        position: absolute;
+                        bottom: 10px;
+                        left: 50%;
+                        transform: translateX(-50%);
+        
+                        .overlay-text {
+                            font-size: 2rem;
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+    
+            .hamburguesa { display: flex; }
+            .menu { display: none; }
+            .menu.mostrar { display: flex; }
+        }
